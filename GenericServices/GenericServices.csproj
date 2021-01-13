@@ -5,14 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
-    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
     <PackageReference Include="GenericServices.StatusGeneric" Version="1.1.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
-    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="2.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
     <PackageReference Include="GenericServices.StatusGeneric" Version="1.1.0" />
@@ -34,18 +34,18 @@
     <FileVersion>3.2.2.0</FileVersion>
     <Company>Selective Analytics</Company>
     <Authors>Jon P Smith</Authors>
-    <PackageId>EfCore.GenericServices</PackageId>
-    <Product>EfCore.GenericServices</Product>
-    <Description>Library to help you quickly code Create, Read, Update and Delete (CRUD) accesses in web/mobile/desktop applications using Entity Framework Core.</Description>
-    <Copyright>Copyright (c) 2018 Jon P Smith</Copyright>
-    <PackageProjectUrl>https://github.com/JonPSmith/EfCore.GenericServices</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/JonPSmith/EfCore.GenericServices</RepositoryUrl>
+    <PackageId>EfCore.GenericServices.Unity</PackageId>
+    <Product>EfCore.GenericServices.Unity</Product>
+    <Description>Library to help you quickly code Create, Read, Update and Delete (CRUD) accesses in web/mobile/desktop applications using Entity Framework Core and the Unity Container.</Description>
+    <Copyright>Copyright (c) 2021 Jan Kupke</Copyright>
+    <PackageProjectUrl>https://github.com/JanKupke1/EfCore.GenericServices.Unity</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/JanKupke1/EfCore.GenericServices.Unity</RepositoryUrl>
     <RepositoryType>GuHub</RepositoryType>
-    <PackageTags>Entity Framework Core, ASP.NET Core</PackageTags>
+    <PackageTags>Entity Framework Core, WPF.NET Core</PackageTags>
     <PackageReleaseNotes>
       - Stops exception if matched parameter is null. This is an attempt to fix issue #47
     </PackageReleaseNotes>
-    <PackageLicenseUrl>https://github.com/JonPSmith/EfCore.GenericServices/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl>https://github.com/JanKupke1/EfCore.GenericServices.Unity/blob/master/LICENSE</PackageLicenseUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/JonPSmith/EfCore.GenericServices/master/Images/GenericServicesNuGetIcon128.png</PackageIconUrl>
   </PropertyGroup>
 
