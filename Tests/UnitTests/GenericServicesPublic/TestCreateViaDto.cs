@@ -319,8 +319,8 @@ namespace Tests.UnitTests.GenericServicesPublic
                 //VERIFY
                 ex.Message.ShouldEqual(
                     "Could not find a ctor/static method that matches the DTO. The ctor/static method that fit the properties in the DTO/VM are:\n" +
-                    "Matched 2 params out of 2. Score 50% Ctor(Name not match, but type is Match, wrong name)\n" +
-                    "Matched 1 params out of 1. Score 30% Ctor(Name not match, but type is Match)");
+                    "Matched 2 params out of 2. Score 50 % Ctor(Name not match, but type is Match, wrong name)\n" +
+                    "Matched 1 params out of 1. Score 30 % Ctor(Name not match, but type is Match)");
 
             }
         }

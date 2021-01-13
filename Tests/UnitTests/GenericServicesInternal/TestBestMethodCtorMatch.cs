@@ -89,7 +89,7 @@ namespace Tests.UnitTests.GenericServicesInternal
 
             //VERIFY
             bestMethod.ShouldNotBeNull();
-            bestMethod.ToString().ShouldEqual("Closest match at 50%: MyBadMethod(Int32 MyInt, String MyString)");
+            bestMethod.ToString().ShouldEqual("Closest match at 50 %: MyBadMethod(Int32 MyInt, String MyString)");
         }
 
         //-----------------------------------------------------------

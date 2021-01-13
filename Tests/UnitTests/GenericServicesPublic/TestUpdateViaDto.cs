@@ -175,7 +175,7 @@ namespace Tests.UnitTests.GenericServicesPublic
 
                 //VERIFY
                 service.IsValid.ShouldBeTrue(service.GetAllErrors());
-                service.Message.ShouldEqual("The book's new price is $1.00.");
+                service.Message.ShouldEqual("The book's new price is $1,00.");
             }
         }
 
