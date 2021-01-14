@@ -68,7 +68,9 @@ namespace GenericServices.Internal.MappingCode
 
             public void MapDtoToEntity(TDto dto, object entity)
             {
-                _wrappedMapper.MapperSaveConfig.CreateMapper().Map(dto, entity);
+                _wrappedMapper.MapperSaveConfig.CreateMapper().Map(dto, entity, opt => {
+                    opt.Items[MapProperties.DbContext] = _context;
+                });
             }
 
             /// <summary>

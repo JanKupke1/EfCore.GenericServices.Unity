@@ -7,13 +7,13 @@ using GenericServices.Configuration;
 using GenericServices.Setup.Internal;
 using GenericServices.PublicButHidden;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
+using Unity;
 
 namespace GenericServices.Setup
 {
     /// <summary>
     /// This contains extension methods for setting up GenericServices at startup.
-    /// It assumes the use of dependency injection (DI) and <see cref="IServiceCollection"/> for DI registering
+    /// It assumes the use of dependency injection (DI) and <see cref="IUnityContainer"/> for DI registering
     /// </summary>
     public static class ConfigureGenericServices
     {
@@ -23,7 +23,7 @@ namespace GenericServices.Setup
         /// <param name="services"></param>
         /// <param name="assembliesToScan">You can define the assemblies to scan for DTOs/ViewModels. Otherwise it will scan all assemblies (slower, but simple)</param>
         /// <returns></returns>
-        public static IServiceCollection GenericServicesSimpleSetup<TContext>(this IServiceCollection services,
+        public static IUnityContainer GenericServicesSimpleSetup<TContext>(this IUnityContainer services,
             params Assembly[] assembliesToScan) where TContext : DbContext
         {
             return services.ConfigureGenericServicesEntities(typeof(TContext))
@@ -39,7 +39,7 @@ namespace GenericServices.Setup
         /// <param name="configuration"></param>
         /// <param name="assembliesToScan">You can define the assemblies to scan for DTOs/ViewModels. Otherwise it will scan all assemblies (slower, but simple)</param>
         /// <returns></returns>
-        public static IServiceCollection GenericServicesSimpleSetup<TContext>(this IServiceCollection services,
+        public static IUnityContainer GenericServicesSimpleSetup<TContext>(this IUnityContainer services,
                     IGenericServicesConfig configuration, params Assembly[] assembliesToScan) where TContext : DbContext
         {
             return services.ConfigureGenericServicesEntities(configuration, typeof(TContext))
@@ -54,7 +54,7 @@ namespace GenericServices.Setup
         /// <param name="serviceCollection"></param>
         /// <param name="contextTypes">You should provide an array of your DbContext types that you want to register</param>
         /// <returns></returns>
-        public static IGenericServicesSetupPart1 ConfigureGenericServicesEntities(this IServiceCollection serviceCollection,
+        public static IGenericServicesSetupPart1 ConfigureGenericServicesEntities(this IUnityContainer serviceCollection,
             params Type[] contextTypes)
         {
             return serviceCollection.ConfigureGenericServicesEntities(null, contextTypes);
@@ -68,7 +68,7 @@ namespace GenericServices.Setup
         /// <param name="configuration">You provide a <see cref="GenericServicesConfig"/> with your settings</param>
         /// <param name="contextTypes">You should provide an array of your DbContext types that you want to register</param>
         /// <returns></returns>
-        public static IGenericServicesSetupPart1 ConfigureGenericServicesEntities(this IServiceCollection services,
+        public static IGenericServicesSetupPart1 ConfigureGenericServicesEntities(this IUnityContainer services,
             IGenericServicesConfig configuration, params Type[] contextTypes)
         {
             var setupEntities = new SetupAllEntities(services, configuration, contextTypes);
@@ -103,22 +103,22 @@ namespace GenericServices.Setup
         /// <param name="singleContextToRegister">If you have one DbContext and you want to use the non-generic ICrudServices
         /// then GenericServices has to register your DbContext against your application's DbContext</param>
         /// <returns></returns>
-        public static IServiceCollection RegisterGenericServices(this IGenericServicesSetupPart2 setupPart2, 
+        public static IUnityContainer RegisterGenericServices(this IGenericServicesSetupPart2 setupPart2, 
             Type singleContextToRegister = null)
         {
-            setupPart2.Services.AddTransient(typeof(ICrudServices<>), typeof(CrudServices<>));
-            setupPart2.Services.AddTransient(typeof(ICrudServicesAsync<>), typeof(CrudServicesAsync<>));
+            setupPart2.Services.RegisterSingleton(typeof(ICrudServices<>), typeof(CrudServices<>));
+            setupPart2.Services.RegisterSingleton(typeof(ICrudServicesAsync<>), typeof(CrudServicesAsync<>));
 
             //If there is only one DbContext then the developer can use the non-generic CrudServices
             if (singleContextToRegister != null)
             {
-                setupPart2.Services.AddTransient<ICrudServices, CrudServices>();
-                setupPart2.Services.AddTransient<ICrudServicesAsync, CrudServicesAsync>();
-                setupPart2.Services.AddTransient(s => (DbContext)s.GetRequiredService(singleContextToRegister));
+                setupPart2.Services.RegisterSingleton<ICrudServices, CrudServices>();
+                setupPart2.Services.RegisterSingleton<ICrudServicesAsync, CrudServicesAsync>();
+                setupPart2.Services.RegisterFactory(singleContextToRegister, s => (DbContext)s.Resolve(singleContextToRegister));
             }
 
             //Register AutoMapper configuration goes here
-            setupPart2.Services.AddSingleton(setupPart2.ConfigAndMapper);
+            setupPart2.Services.RegisterInstance(setupPart2.ConfigAndMapper);
 
             return setupPart2.Services;
         }

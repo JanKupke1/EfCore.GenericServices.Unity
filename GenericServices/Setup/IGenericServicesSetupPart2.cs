@@ -1,6 +1,6 @@
 ﻿using GenericServices.Configuration;
 using GenericServices.PublicButHidden;
-using Microsoft.Extensions.DependencyInjection;
+using Unity;
 
 namespace GenericServices.Setup
 {
@@ -12,7 +12,7 @@ namespace GenericServices.Setup
         /// <summary>
         /// The DI ServiceCollection to use for registering
         /// </summary>
-        IServiceCollection Services { get; }
+        IUnityContainer Services { get; }
 
         /// <summary>
         /// Global GenericServices configuration

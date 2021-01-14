@@ -5,7 +5,6 @@ using System;
 using System.Linq;
 using GenericServices.Configuration;
 using GenericServices.Internal.Decoders;
-using GenericServices.Setup.Internal;
 using StatusGeneric;
 
 namespace GenericServices.Setup.Internal

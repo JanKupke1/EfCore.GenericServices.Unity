@@ -9,7 +9,6 @@ using System.Linq;
 using System.Reflection;
 using GenericServices.Configuration.Internal;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using StatusGeneric;
 

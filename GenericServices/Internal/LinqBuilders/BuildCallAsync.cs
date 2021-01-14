@@ -7,7 +7,6 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
 using GenericServices.Configuration;
 
 [assembly: InternalsVisibleTo("Tests")]

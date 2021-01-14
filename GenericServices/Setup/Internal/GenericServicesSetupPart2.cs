@@ -4,7 +4,7 @@
 using System;
 using GenericServices.Configuration;
 using GenericServices.PublicButHidden;
-using Microsoft.Extensions.DependencyInjection;
+using Unity;
 
 namespace GenericServices.Setup.Internal
 {
@@ -14,7 +14,7 @@ namespace GenericServices.Setup.Internal
     public class GenericServicesSetupPart2 : IGenericServicesSetupPart2
     {
 
-        internal GenericServicesSetupPart2(IServiceCollection services, IGenericServicesConfig publicConfig, IWrappedConfigAndMapper configAndMapper)
+        internal GenericServicesSetupPart2(IUnityContainer services, IGenericServicesConfig publicConfig, IWrappedConfigAndMapper configAndMapper)
         {
             Services = services ?? throw new ArgumentNullException(nameof(services));
             PublicConfig = publicConfig ?? throw new ArgumentNullException(nameof(publicConfig));
@@ -22,7 +22,7 @@ namespace GenericServices.Setup.Internal
         }
 
         /// <inheritdoc />
-        public IServiceCollection Services { get; }
+        public IUnityContainer Services { get; }
 
         /// <inheritdoc />
         public IGenericServicesConfig PublicConfig { get; }
