@@ -3,9 +3,11 @@
 ](https://www.buymeacoffee.com/l709oYtzp)
 
 
-# EfCore.GenericServices
+# EfCore.GenericServices.Unity
 
-This library helps you quickly code Create, Read, Update and Delete (CRUD) accesses for a web/mobile/desktop application. It acts as a adapter and command pattern between a database accessed by Entity Framework Core (EF Core) and the needs of the front-end system. 
+This library helps you quickly code Create, Read, Update and Delete (CRUD) accesses for a Wpf desktop application. It acts as a adapter and command pattern between a database accessed by Entity Framework Core (EF Core) and the needs of the front-end system. 
+
+It is based on the brilliant project [GenericServices](https://github.com/JonPSmith/EfCore.GenericServices) by Jon P Smith. However, this project it is not intended for ASP.NET, but for use in a WPF project with the use of Unity. Any support for Json has been removed so that no unnecessary ballast is included. 
 
 ## Useful articles
 
@@ -28,18 +30,17 @@ b) What properties in that class/table do you want to access or change?
 This library uses DTOs (data transfer objects, also known as ViewModels) plus a special interface to define the class/table and the properties to access.
 That allows the library to implement a generic solution for each of the four CRUD accesses, where the only thing that changes is the DTO you use.
 
-Typical web applications have hundreds of CRUD pages - display this, edit that, delete the other -
+Typical applications have hundreds of CRUD Views - display this, edit that, delete the other -
 and each CRUD access has to adapt the data in the database to show the user, and then apply the changes to the database. 
 So, you create one set of update code for your specific application and then cut/paste + change one line (the DTO name) for all the other versions. 
 
-I personally work with ASP.NET Core, so my examples are from that, but it will work with any NET Core type of application
-*(I do know one person have used this libary with WPF).*
-
-[NuGet link](https://www.nuget.org/packages/EfCore.GenericServices/) and [link to documentation](https://github.com/JonPSmith/EfCore.GenericServices/wiki).
-
 MIT license.
 
-## Code examples of using EfCore.GenericServices
+## Code examples of using EfCore.GenericServices.Unity
+# TODO: WPF Examples
+
+
+
 
 I personally work with ASP.NET Core, so my examples are all around ASP.NET Core, but EfCore.GenericServices will work with any NET Core type of application
 *(I do know one person have used this libary with WPF).*

@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GenericServices\GenericServices.csproj" />
+    <ProjectReference Include="..\GenericServices\GenericServices.Unity.csproj" />
   </ItemGroup>
 
 </Project>

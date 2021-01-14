@@ -34,7 +34,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataLayer\DataLayer.csproj" />
-    <ProjectReference Include="..\GenericServices\GenericServices.csproj" />
+    <ProjectReference Include="..\GenericServices\GenericServices.Unity.csproj" />
     <ProjectReference Include="..\ServiceLayer\ServiceLayer.csproj" />
   </ItemGroup>
 

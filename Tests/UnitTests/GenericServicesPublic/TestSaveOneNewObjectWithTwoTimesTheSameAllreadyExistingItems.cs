@@ -57,7 +57,7 @@ namespace Tests.UnitTests.TestIssues
         }
 
         [Fact]
-        public void TestSaveOneNewObjectWithTwoTimesTheSameAllreadyExistingItems_TheItemsAreNotTheSameOneTheIdAreTheSame_NoErrorRaised()
+        public void TestSaveOneNewObjectWithTwoTimesTheSameAllreadyExistingItems_TwoInstancesOfTheSameClassWithTheSameId_NoErrorRaised()
         {
             var options = SqliteInMemory.CreateOptions<TestDbContext>();
             using (var context = new TestDbContext(options))
@@ -94,7 +94,7 @@ namespace Tests.UnitTests.TestIssues
         }
 
         [Fact]
-        public void TestSaveOneNewObjectWithTwoTimesTheSameAllreadyExistingItems_TheItemContentIsNotTheSameOneTheIdAreTheSame_NoErrorRaised()
+        public void TestSaveOneNewObjectWithTwoTimesTheSameAllreadyExistingItems_TwoInstancesOfTheSameClassWithTheSameIdAndDifferentContent_NoErrorRaised()
         {
             var options = SqliteInMemory.CreateOptions<TestDbContext>();
             using (var context = new TestDbContext(options))
@@ -124,7 +124,7 @@ namespace Tests.UnitTests.TestIssues
                 hasTwoNormalEntity.NormalEntity2 = fistNormal2;
 
                 context.HasTwoNormalEntities.Add(hasTwoNormalEntity);
-                var status = context.SaveChangesWithValidation();  //Now, You Don't know, is MyString  fistNormal1 or fistNormal2!!!
+                var status = context.SaveChangesWithValidation();  //Now, you don't know, is MyString fistNormal1 or fistNormal2!!!
 
                 //VERIFY
                 status.IsValid.ShouldBeTrue(status.GetAllErrors());
