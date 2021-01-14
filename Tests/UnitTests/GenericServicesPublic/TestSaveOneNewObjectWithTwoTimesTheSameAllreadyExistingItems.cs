@@ -124,7 +124,7 @@ namespace Tests.UnitTests.TestIssues
                 hasTwoNormalEntity.NormalEntity2 = fistNormal2;
 
                 context.HasTwoNormalEntities.Add(hasTwoNormalEntity);
-                var status = context.SaveChangesWithValidation();  //Now, You Don't know, is MyString  fistNormal1 or fistNormal1!!!
+                var status = context.SaveChangesWithValidation();  //Now, You Don't know, is MyString  fistNormal1 or fistNormal2!!!
 
                 //VERIFY
                 status.IsValid.ShouldBeTrue(status.GetAllErrors());
