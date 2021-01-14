@@ -21,6 +21,14 @@ namespace GenericServices.Internal.MappingCode
         private readonly IWrappedConfigAndMapper _configAndMapper;
         private readonly DbContext _context;
 
+        /// <summary>
+        /// ctor
+        /// </summary>
+        /// <param name="dtoInfo"></param>
+        /// <param name="entityInfo"></param>
+        /// <param name="configAndMapper"></param>
+        /// <param name="context"></param>
+        /// <exception cref="ArgumentNullException"></exception>
         public EntityUpdateHandler(DecodedDto dtoInfo, DecodedEntityClass entityInfo, IWrappedConfigAndMapper configAndMapper, DbContext context)
         {
             _dtoInfo = dtoInfo ?? throw new ArgumentNullException(nameof(dtoInfo));
@@ -29,6 +37,13 @@ namespace GenericServices.Internal.MappingCode
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
+        /// <summary>
+        /// ReadEntityAndUpdateViaDto
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <param name="methodName"></param>
+        /// <returns></returns>
+        /// <exception cref="InvalidOperationException"></exception>
         public IStatusGeneric ReadEntityAndUpdateViaDto(TDto dto, string methodName)
         {
             //first we need to load it 
@@ -43,6 +58,13 @@ namespace GenericServices.Internal.MappingCode
             return RunMethodViaLinq(dto, methodName, entity, mapper);
         }
 
+        /// <summary>
+        /// ReadEntityAndUpdateViaDtoAsync
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <param name="methodName"></param>
+        /// <returns></returns>
+        /// <exception cref="InvalidOperationException"></exception>
         public async Task<IStatusGeneric> ReadEntityAndUpdateViaDtoAsync(TDto dto, string methodName)
         {
             //first we need to load it 
@@ -66,6 +88,7 @@ namespace GenericServices.Internal.MappingCode
         /// <param name="entity"></param>
         /// <param name="mapper"></param>
         /// <returns></returns>
+        /// <exception cref="InvalidOperationException"></exception>
         private IStatusGeneric RunMethodViaLinq(TDto dto, string methodName, dynamic entity, CreateMapper mapper)
         {
             var decodedName = _dtoInfo.GetSpecifiedName(methodName, CrudTypes.Update);

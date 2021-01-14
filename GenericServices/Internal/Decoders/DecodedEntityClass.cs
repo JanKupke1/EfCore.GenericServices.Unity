@@ -53,6 +53,12 @@ namespace GenericServices.Internal.Decoders
         public bool CanBeUpdatedViaMethods => PublicSetterMethods.Any();
         public bool CanBeCreatedByCtorOrStaticMethod => PublicCtors.Any(x => x.GetParameters().Length > 0) || PublicStaticCreatorMethods.Any();
 
+        /// <summary>
+        /// ctor
+        /// </summary>
+        /// <param name="entityType"></param>
+        /// <param name="context"></param>
+        /// <exception cref="InvalidOperationException"></exception>
         public DecodedEntityClass(Type entityType, DbContext context)
         {
             EntityType = entityType ?? throw new ArgumentNullException(nameof(entityType));
@@ -158,6 +164,7 @@ namespace GenericServices.Internal.Decoders
         /// This will throw an exception if the cud type doesn't fit the entity style
         /// </summary>
         /// <param name="cudType">either create, update or delete</param>
+        /// <exception cref="InvalidOperationException"></exception>
         public void CheckCanDoOperation(CrudTypes cudType)
         {
             if (EntityStyle == EntityStyles.HasNoKey || 

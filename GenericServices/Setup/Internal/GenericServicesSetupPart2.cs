@@ -14,6 +14,13 @@ namespace GenericServices.Setup.Internal
     public class GenericServicesSetupPart2 : IGenericServicesSetupPart2
     {
 
+        /// <summary>
+        /// ctor
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="publicConfig"></param>
+        /// <param name="configAndMapper"></param>
+        /// <exception cref="ArgumentNullException"></exception>
         internal GenericServicesSetupPart2(IUnityContainer services, IGenericServicesConfig publicConfig, IWrappedConfigAndMapper configAndMapper)
         {
             Services = services ?? throw new ArgumentNullException(nameof(services));

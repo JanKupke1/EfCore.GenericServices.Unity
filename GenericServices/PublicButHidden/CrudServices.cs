@@ -235,6 +235,7 @@ namespace GenericServices.PublicButHidden
         //}
 
         /// <inheritdoc />
+        /// <exception cref="NotImplementedException"></exception>
         public void DeleteAndSave<TEntity>(params object[] keys) where TEntity : class
         {
             var entityInfo = _context.GetEntityInfoThrowExceptionIfNotThere(typeof(TEntity));

@@ -79,6 +79,15 @@ namespace GenericServices.Configuration
         public PropertyMatch(bool nameMatched, TypeMatchLevels typeMatch, PropertyInfo propertyInfo) 
             : this(nameMatched, typeMatch, propertyInfo, MatchSources.Property, null) { }
 
+        /// <summary>
+        /// ctor
+        /// </summary>
+        /// <param name="nameMatched"></param>
+        /// <param name="typeMatch"></param>
+        /// <param name="propertyInfo"></param>
+        /// <param name="matchSource"></param>
+        /// <param name="nonPropertyMatchType"></param>
+        /// <exception cref="InvalidOperationException"></exception>
         internal PropertyMatch(bool nameMatched, TypeMatchLevels typeMatch, PropertyInfo propertyInfo, 
             MatchSources matchSource, Type nonPropertyMatchType)
         {

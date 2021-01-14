@@ -8,6 +8,7 @@ namespace Tests.EfCode
 {
     public class TestDbContext : DbContext
     {
+        public DbSet<HasTwoNormalEntity> HasTwoNormalEntities { get; set; }
         public DbSet<NormalEntity> NormalEntities { get; set; }
         public DbSet<DddCtorEntity> DddCtorEntities { get; set; }
         public DbSet<DddStaticCreateEntity> DddStaticFactEntities { get; set; }

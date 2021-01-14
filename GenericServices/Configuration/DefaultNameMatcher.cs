@@ -35,6 +35,12 @@ namespace GenericServices.Configuration
         }
 
         //thanks to https://stackoverflow.com/questions/3565015/bestpractice-transform-first-character-of-a-string-into-lower-case
+        /// <summary>
+        /// FirstCharToUpper
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
         private static string FirstCharToUpper(this string input)
         {
             if (string.IsNullOrEmpty(input))

@@ -20,7 +20,7 @@ namespace GenericServices.Setup.Internal
         {
             var myGeneric = typeof(ConfigGenerator<,>);
             var copierType = myGeneric.MakeGenericType(dtoType, entityInfo.EntityType);
-            Accessor = Activator.CreateInstance(copierType, new object[]{ configInfo});
+            Accessor = Activator.CreateInstance(copierType, new object[] { entityInfo, configInfo });
         }
 
         public class ConfigGenerator<TDto, TEntity>
@@ -109,7 +109,7 @@ namespace GenericServices.Setup.Internal
                     try
                     {
                         var keyProperty = type.GetProperty(item.Name, BindingFlags.Public | BindingFlags.Instance);
-                        value = keyProperty.GetValue(dto);
+                        value =  keyProperty?.GetValue(dto)  ;
                     }
                     catch (AmbiguousMatchException)
                     {
