@@ -9,6 +9,14 @@ This library helps you quickly code Create, Read, Update and Delete (CRUD) acces
 
 It is based on the brilliant project [GenericServices](https://github.com/JonPSmith/EfCore.GenericServices) by Jon P Smith. However, this project it is not intended for ASP.NET, but for use in a WPF project with the use of Unity. Any support for Json has been removed so that no unnecessary ballast is included. 
 
+In addition, I have built into the service the ability to store an object that points to the same class instance in two different places.
+
+Normally an error is triggered in the entity framework when trying to insert the same object in two different places. I have modified the service to check if an ID exists. If yes, then it pulls the corresponding entity checkout from the DB context and fills it with appropriate data. 
+
+But this then allows the error that if the cloned object is saved in a changed form, you don't know which change was applied! When creating the dto classes it is not possible for the service so far to find out. Whether an instance of a class already exists. And then to use this.
+
+
+
 ## Useful articles
 
 This readme provides a good overview, but here are some articles that give you a detailed description of what the libraray does.
