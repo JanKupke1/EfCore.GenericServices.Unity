@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>ShowRoom</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity" Version="8.0.0.1909" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShowRoom.Core\ShowRoom.Core.csproj" />
+    <ProjectReference Include="..\Modules\ShowRoom.Modules.ModuleName\ShowRoom.Modules.EmployeeManagment.csproj" />
+    <ProjectReference Include="..\Services\ShowRoom.Services.Interfaces\ShowRoom.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\ShowRoom.Services\ShowRoom.Services.csproj" />
+  </ItemGroup>
+</Project>
