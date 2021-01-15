@@ -18,9 +18,9 @@ namespace ShowRoom.Modules.EmployeeManagment.Views
     /// <summary>
     /// Interaction logic for ViewA.xaml
     /// </summary>
-    public partial class ViewA : UserControl
+    public partial class EmployeeSelectionView : UserControl
     {
-        public ViewA()
+        public EmployeeSelectionView()
         {
             InitializeComponent();
         }

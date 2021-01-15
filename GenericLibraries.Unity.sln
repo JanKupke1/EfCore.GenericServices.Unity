@@ -53,6 +53,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.EF.Libary", "ShowRoo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Base", "ShowRoom\Common\Common\Common.Base\Common.Base.csproj", "{F2EE5F36-E0E3-4A9B-8849-E3FEE06CE675}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowRoom.Modules.EmployeeManagment.DataLayer", "ShowRoom\Modules\ShowRoom.Modules.EmployeeManagment.DataLayer\ShowRoom.Modules.EmployeeManagment.DataLayer.csproj", "{BE20FD3F-723B-45C7-A5D6-D458B834B7C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +117,10 @@ Global
 		{F2EE5F36-E0E3-4A9B-8849-E3FEE06CE675}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2EE5F36-E0E3-4A9B-8849-E3FEE06CE675}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2EE5F36-E0E3-4A9B-8849-E3FEE06CE675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE20FD3F-723B-45C7-A5D6-D458B834B7C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE20FD3F-723B-45C7-A5D6-D458B834B7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE20FD3F-723B-45C7-A5D6-D458B834B7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE20FD3F-723B-45C7-A5D6-D458B834B7C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,6 +148,7 @@ Global
 		{708BA1E9-51A1-47DB-AFFC-107F8557C164} = {80168AE3-05CA-4F3A-B266-FF8AB4797286}
 		{00E7AC98-7BF8-4117-A8F5-CC624DAA1C86} = {708BA1E9-51A1-47DB-AFFC-107F8557C164}
 		{F2EE5F36-E0E3-4A9B-8849-E3FEE06CE675} = {708BA1E9-51A1-47DB-AFFC-107F8557C164}
+		{BE20FD3F-723B-45C7-A5D6-D458B834B7C0} = {9BA86580-7D11-4FF4-B2F6-B2C50F1A4687}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9A011C26-442A-4598-A3BD-CBF378797AD0}

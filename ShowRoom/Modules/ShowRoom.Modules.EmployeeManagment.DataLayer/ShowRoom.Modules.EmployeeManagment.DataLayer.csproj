@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>ShowRoom.Modules.EmployeeManagment.DataLayer</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dtos\Offer.cs" />
+    <Compile Remove="Dtos\Order.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="8.0.0.1909" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\GenericServices\GenericServices.Unity.csproj" />
+    <ProjectReference Include="..\..\ShowRoom.Core\ShowRoom.Core.csproj" />
+    <ProjectReference Include="..\..\ShowRoom.Domain\ShowRoom.Domain\ShowRoom.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

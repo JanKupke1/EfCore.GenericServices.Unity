@@ -10,5 +10,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\ShowRoom.Core\ShowRoom.Core.csproj" />
     <ProjectReference Include="..\..\Services\ShowRoom.Services.Interfaces\ShowRoom.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\ShowRoom.Modules.EmployeeManagment.DataLayer\ShowRoom.Modules.EmployeeManagment.DataLayer.csproj" />
   </ItemGroup>
 </Project>
