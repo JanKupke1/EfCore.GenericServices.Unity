@@ -4,9 +4,9 @@
 using System;
 using DataLayer.EfClasses;
 using DataLayer.EfCode;
-using GenericServices;
-using GenericServices.Configuration;
-using GenericServices.Setup;
+using GenericServices.Unity;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Setup;
 using Tests.Dtos;
 using TestSupport.EfHelpers;
 using Xunit;

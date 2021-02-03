@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("Test")]
 
-namespace GenericServices.Internal
+namespace GenericServices.Unity.Internal
 {
     internal static class ErrorMessageExtensions
     {

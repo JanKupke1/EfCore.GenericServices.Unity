@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 
-namespace GenericServices
+namespace GenericServices.Unity
 {
     /// <summary>
     /// This is the sync interface to CrudServices, which assumes you have one DbContext which the CrudServices setup code will register to the DbContext type

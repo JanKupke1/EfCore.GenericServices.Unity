@@ -1,14 +1,10 @@
-﻿using System;
+﻿using GenericServices.Unity.Internal.Decoders;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
-using DataLayer.EfClasses;
 using Xunit;
-using GenericServices.Internal;
-using GenericServices.Internal.Decoders;
 using Xunit.Extensions.AssertExtensions;
 
 namespace Tests.UnitTests.GenericServicesInternal

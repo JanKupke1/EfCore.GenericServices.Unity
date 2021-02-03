@@ -4,7 +4,7 @@
 using System;
 using AutoMapper;
 
-namespace GenericServices.Configuration
+namespace GenericServices.Unity.Configuration
 {
     /// <summary>
     /// This provides a per-DTO/ViewModel configuation source

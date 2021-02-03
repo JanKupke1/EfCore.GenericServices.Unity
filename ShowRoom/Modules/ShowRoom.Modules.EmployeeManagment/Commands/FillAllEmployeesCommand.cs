@@ -1,11 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using PIB.Lab.OrderControl.Common.BaseClasses;
+﻿using PIB.Lab.OrderControl.Common.BaseClasses;
 using ShowRoom.Modules.EmployeeManagment.DataLayer.Dtos;
 using ShowRoom.Services.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 
 namespace ShowRoom.Modules.EmployeeManagment.Commands
 {

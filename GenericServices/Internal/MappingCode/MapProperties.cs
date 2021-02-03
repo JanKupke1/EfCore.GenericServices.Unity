@@ -1,4 +1,4 @@
-﻿namespace GenericServices.Internal.MappingCode
+﻿namespace GenericServices.Unity.Internal.MappingCode
 {
     public static class MapProperties
     {

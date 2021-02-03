@@ -2,10 +2,9 @@
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
 using System.Linq;
-using GenericServices;
-using GenericServices.Configuration;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.PublicButHidden;
+using GenericServices.Unity.Setup;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 using Tests.Dtos;

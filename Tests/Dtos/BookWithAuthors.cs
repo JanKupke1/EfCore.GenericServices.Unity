@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 using DataLayer.EfClasses;
-using GenericServices;
+using GenericServices.Unity;
 
 namespace Tests.Dtos
 {

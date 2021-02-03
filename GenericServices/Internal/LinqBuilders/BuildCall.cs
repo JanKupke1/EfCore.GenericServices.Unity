@@ -8,14 +8,14 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using GenericServices.Configuration;
-using GenericServices.Internal.Decoders;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Internal.Decoders;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 
 [assembly: InternalsVisibleTo("Tests")]
 
-namespace GenericServices.Internal.LinqBuilders
+namespace GenericServices.Unity.Internal.LinqBuilders
 {
     internal static class BuildCall
     {

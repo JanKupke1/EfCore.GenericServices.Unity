@@ -3,7 +3,7 @@
 
 using System;
 using AutoMapper;
-using GenericServices.Configuration;
+using GenericServices.Unity.Configuration;
 using Tests.Dtos;
 using Tests.EfClasses;
 

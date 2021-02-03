@@ -1,10 +1,9 @@
-﻿using GenericServices;
+﻿using GenericServices.Unity;
 using ShowRoom.Modules.EmployeeManagment.DataLayer.Dtos;
 using ShowRoom.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace ShowRoom.Modules.EmployeeManagment.Services
 {

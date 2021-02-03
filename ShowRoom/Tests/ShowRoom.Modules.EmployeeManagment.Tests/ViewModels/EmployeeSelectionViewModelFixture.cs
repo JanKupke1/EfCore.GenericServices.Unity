@@ -1,18 +1,18 @@
 ﻿using Moq;
 using Prism.Regions;
-using ShowRoom.Modules.ModuleName.ViewModels;
+using ShowRoom.Modules.EmployeeManagment.ViewModels;
 using ShowRoom.Services.Interfaces;
 using Xunit;
 
 namespace ShowRoom.Modules.ModuleName.Tests.ViewModels
 {
-    public class ViewAViewModelFixture
+    public class EmployeeSelectionViewModelFixture
     {
         Mock<IMessageService> _messageServiceMock;
         Mock<IRegionManager> _regionManagerMock;
         const string MessageServiceDefaultMessage = "Some Value";
 
-        public ViewAViewModelFixture()
+        public EmployeeSelectionViewModelFixture()
         {
             var messageService = new Mock<IMessageService>();
             messageService.Setup(x => x.GetMessage()).Returns(MessageServiceDefaultMessage);
@@ -24,7 +24,7 @@ namespace ShowRoom.Modules.ModuleName.Tests.ViewModels
         [Fact]
         public void MessagePropertyValueUpdated()
         {
-            var vm = new ViewAViewModel(_regionManagerMock.Object, _messageServiceMock.Object);
+            var vm = new EmployeeSelectionViewModel(_regionManagerMock.Object, _messageServiceMock.Object);
 
             _messageServiceMock.Verify(x => x.GetMessage(), Times.Once);
 
@@ -34,7 +34,7 @@ namespace ShowRoom.Modules.ModuleName.Tests.ViewModels
         [Fact]
         public void MessageINotifyPropertyChangedCalled()
         {
-            var vm = new ViewAViewModel(_regionManagerMock.Object, _messageServiceMock.Object);
+            var vm = new EmployeeSelectionViewModel(_regionManagerMock.Object, _messageServiceMock.Object);
             Assert.PropertyChanged(vm, nameof(vm.Message), () => vm.Message = "Changed");
         }
     }

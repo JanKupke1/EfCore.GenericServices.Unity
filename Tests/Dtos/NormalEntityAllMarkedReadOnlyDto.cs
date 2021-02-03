@@ -2,7 +2,7 @@
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
 using System.ComponentModel;
-using GenericServices;
+using GenericServices.Unity;
 using Tests.EfClasses;
 
 namespace Tests.Dtos

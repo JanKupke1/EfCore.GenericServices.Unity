@@ -1,9 +1,8 @@
 ﻿// Copyright (c) 2020 Jon P Smith, GitHub: JonPSmith, web: http://www.thereformedprogrammer.net/
 // Licensed under MIT license. See License.txt in the project root for license information.
 
+using GenericServices.Unity.Setup;
 using System;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup;
 using Tests.Dtos;
 using Tests.EfCode;
 using TestSupport.EfHelpers;

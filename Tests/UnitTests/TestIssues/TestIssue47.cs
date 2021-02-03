@@ -4,10 +4,10 @@
 using System;
 using System.Linq;
 using AutoMapper;
-using GenericServices;
-using GenericServices.Configuration;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup;
+using GenericServices.Unity;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.PublicButHidden;
+using GenericServices.Unity.Setup;
 using Tests.EfClasses;
 using Tests.EfCode;
 using TestSupport.EfHelpers;

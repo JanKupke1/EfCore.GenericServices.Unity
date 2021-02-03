@@ -3,11 +3,11 @@
 
 using System;
 using System.Linq;
-using GenericServices.Configuration;
-using GenericServices.Internal.Decoders;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Internal.Decoders;
 using StatusGeneric;
 
-namespace GenericServices.Setup.Internal
+namespace GenericServices.Unity.Setup.Internal
 {
     internal class RegisterOneDtoType : StatusGenericHandler
     {

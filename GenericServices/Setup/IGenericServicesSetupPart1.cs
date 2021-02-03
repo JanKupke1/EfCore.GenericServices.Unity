@@ -1,7 +1,7 @@
-﻿using GenericServices.Configuration;
+﻿using GenericServices.Unity.Configuration;
 using Unity;
 
-namespace GenericServices.Setup
+namespace GenericServices.Unity.Setup
 {
     /// <summary>
     /// Used to chain ConfigureGenericServicesEntities to ConfigureGenericServicesEntities

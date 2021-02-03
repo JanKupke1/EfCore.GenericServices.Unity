@@ -3,7 +3,7 @@
 
 using Microsoft.EntityFrameworkCore;
 
-namespace GenericServices
+namespace GenericServices.Unity
 {
     /// <summary>
     /// This is the interface for the form of CrudServices where you define the DbContext to be used in the CrudServices

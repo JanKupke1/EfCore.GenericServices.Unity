@@ -6,12 +6,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using GenericServices.Internal.Decoders;
+using GenericServices.Unity.Internal.Decoders;
 using Microsoft.EntityFrameworkCore;
 
 [assembly: InternalsVisibleTo("Tests")]
 
-namespace GenericServices.Internal.MappingCode
+namespace GenericServices.Unity.Internal.MappingCode
 {
     internal static class KeyHandlers
     {

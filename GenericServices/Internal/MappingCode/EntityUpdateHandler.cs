@@ -4,14 +4,14 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using GenericServices.Configuration.Internal;
-using GenericServices.Internal.Decoders;
-using GenericServices.PublicButHidden;
-using GenericServices.Internal.LinqBuilders;
+using GenericServices.Unity.Configuration.Internal;
+using GenericServices.Unity.Internal.Decoders;
+using GenericServices.Unity.PublicButHidden;
+using GenericServices.Unity.Internal.LinqBuilders;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 
-namespace GenericServices.Internal.MappingCode
+namespace GenericServices.Unity.Internal.MappingCode
 {
     internal class EntityUpdateHandler<TDto> : StatusGenericHandler
         where TDto : class

@@ -5,14 +5,15 @@ using System;
 using System.Linq;
 using DataLayer.EfClasses;
 using DataLayer.EfCode;
-using GenericServices.Internal.Decoders;
-using GenericServices.Internal.MappingCode;
-using GenericServices.Setup;
+using GenericServices.Unity.Internal.MappingCode;
+using GenericServices.Unity.Setup;
 using Tests.Dtos;
 using TestSupport.EfHelpers;
 using Xunit;
 using Xunit.Abstractions;
 using Xunit.Extensions.AssertExtensions;
+using GenericServices.Unity.Internal.Decoders;
+
 
 namespace Tests.UnitTests.Performance
 {

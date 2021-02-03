@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2018 Jon P Smith, GitHub: JonPSmith, web: http://www.thereformedprogrammer.net/
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
-namespace GenericServices.Configuration
+namespace GenericServices.Unity.Configuration
 {
     /// <summary>
     /// This provides a per-DTO/ViewModel configuation source. This part is the part that doesn't need Generics

@@ -5,7 +5,7 @@ using System;
 using System.ComponentModel;
 using System.Reflection;
 
-namespace GenericServices.Internal.Decoders
+namespace GenericServices.Unity.Internal.Decoders
 {
     [Flags]
     internal enum DtoPropertyTypes

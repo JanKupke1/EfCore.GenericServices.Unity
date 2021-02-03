@@ -6,7 +6,7 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 
-namespace GenericServices.Configuration
+namespace GenericServices.Unity.Configuration
 {
     /// <summary>
     /// This is the delegate for the method that matches name/type to a property's name/type

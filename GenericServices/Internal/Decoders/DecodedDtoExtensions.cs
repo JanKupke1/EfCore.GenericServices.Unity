@@ -4,9 +4,9 @@
 using System;
 using System.Linq;
 using System.Reflection;
-using GenericServices.Configuration;
+using GenericServices.Unity.Configuration;
 
-namespace GenericServices.Internal.Decoders
+namespace GenericServices.Unity.Internal.Decoders
 {
     internal static class DecodedDtoExtensions
     {

@@ -2,11 +2,11 @@
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
 using System;
-using GenericServices.Configuration;
+using GenericServices.Unity.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Unity;
 
-namespace GenericServices.Setup.Internal
+namespace GenericServices.Unity.Setup.Internal
 {
     internal class SetupAllEntities : IGenericServicesSetupPart1
     {

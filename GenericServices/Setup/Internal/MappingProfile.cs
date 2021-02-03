@@ -8,7 +8,7 @@ using AutoMapper;
 
 [assembly: InternalsVisibleTo("Tests")]
 
-namespace GenericServices.Setup.Internal
+namespace GenericServices.Unity.Setup.Internal
 {
     internal class MappingProfile : Profile
     {

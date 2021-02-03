@@ -7,12 +7,11 @@ using System.Collections.Immutable;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
-using GenericServices.Configuration.Internal;
+using GenericServices.Unity.Configuration.Internal;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using StatusGeneric;
 
-namespace GenericServices.Internal.Decoders
+namespace GenericServices.Unity.Internal.Decoders
 {
     // ReSharper disable once InconsistentNaming
     internal enum EntityStyles

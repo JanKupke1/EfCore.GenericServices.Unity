@@ -3,7 +3,7 @@
 
 using System;
 
-namespace GenericServices.Configuration.Internal
+namespace GenericServices.Unity.Configuration.Internal
 {
     [Flags]
     internal enum CrudTypes

@@ -1,10 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShowRoom.Domain.Contexts.Configurations;
 using ShowRoom.Domain.Entities;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Text;
 
 namespace ShowRoom.Domain.Contexts
 {

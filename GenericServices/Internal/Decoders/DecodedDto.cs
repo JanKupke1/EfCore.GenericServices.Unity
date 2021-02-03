@@ -5,10 +5,10 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using GenericServices.Configuration;
-using GenericServices.Configuration.Internal;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Configuration.Internal;
 
-namespace GenericServices.Internal.Decoders
+namespace GenericServices.Unity.Internal.Decoders
 {
     internal class DecodedDto
     {

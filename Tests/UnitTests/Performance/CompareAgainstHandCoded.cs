@@ -4,20 +4,15 @@
 using System.Linq;
 using DataLayer.EfClasses;
 using DataLayer.EfCode;
-using GenericServices;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup;
-using GenericServices.Internal.Decoders;
-using Microsoft.EntityFrameworkCore;
+using GenericServices.Unity.PublicButHidden;
+using GenericServices.Unity.Setup;
 using Tests.Dtos;
 using Tests.EfClasses;
 using Tests.EfCode;
 using Tests.Helpers;
 using TestSupport.EfHelpers;
-using TestSupport.Helpers;
 using Xunit;
 using Xunit.Abstractions;
-using Xunit.Extensions.AssertExtensions;
 using AddReviewDto = ServiceLayer.HomeController.Dtos.AddReviewDto;
 
 namespace Tests.UnitTests.Performance

@@ -2,7 +2,7 @@
 
 using System.Text.RegularExpressions;
 
-namespace GenericServices.Internal
+namespace GenericServices.Unity.Internal
 {
     internal static class SplitterExtension
     {

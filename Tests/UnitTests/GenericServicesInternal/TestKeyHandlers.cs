@@ -1,12 +1,12 @@
-﻿using GenericServices.Configuration;
-using Xunit;
-using GenericServices.Internal.Decoders;
-using GenericServices.Internal.MappingCode;
+﻿using Xunit;
 using Tests.Dtos;
 using Tests.EfClasses;
 using Tests.EfCode;
 using TestSupport.EfHelpers;
 using Xunit.Extensions.AssertExtensions;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Internal.Decoders;
+using GenericServices.Unity.Internal.MappingCode;
 
 namespace Tests.UnitTests.GenericServicesInternal
 {

@@ -2,9 +2,9 @@
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
 using System.Linq;
-using GenericServices;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup;
+using GenericServices.Unity;
+using GenericServices.Unity.PublicButHidden;
+using GenericServices.Unity.Setup;
 using Tests.Dtos;
 using Tests.EfClasses;
 using Tests.EfCode;

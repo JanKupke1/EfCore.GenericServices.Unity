@@ -1,20 +1,12 @@
-﻿using System;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using DataLayer.EfClasses;
-using DataLayer.EfCode;
-using GenericServices;
-using GenericServices.Configuration;
+﻿using System.Linq;
 using Xunit;
-using GenericServices.Internal.Decoders;
-using Microsoft.AspNetCore.Mvc;
 using Tests.Dtos;
 using Tests.EfClasses;
 using Tests.EfCode;
-using Tests.UnitTests.GenericServicesPublic;
 using TestSupport.EfHelpers;
 using Xunit.Extensions.AssertExtensions;
+using GenericServices.Unity.Internal.Decoders;
+using GenericServices.Unity.Configuration;
 
 namespace Tests.UnitTests.GenericServicesInternal
 {

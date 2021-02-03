@@ -1,7 +1,4 @@
-﻿
-using System;
-
-namespace Tests.EfClasses
+﻿namespace Tests.EfClasses
 {
     public class ContactAddress 
     {

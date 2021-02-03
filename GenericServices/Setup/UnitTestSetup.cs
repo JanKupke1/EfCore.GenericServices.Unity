@@ -2,12 +2,12 @@
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
 using System;
-using GenericServices.Configuration;
-using GenericServices.Setup.Internal;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Setup.Internal;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 
-namespace GenericServices.Setup
+namespace GenericServices.Unity.Setup
 {
     /// <summary>
     /// This contains an extension method if you want to use GenericServices in a unit test or non-DI situation

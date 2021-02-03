@@ -2,9 +2,8 @@
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System;
-using System.ComponentModel;
-using GenericServices;
-using GenericServices.Setup;
+using GenericServices.Unity;
+using GenericServices.Unity.Setup;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 using Xunit.Extensions.AssertExtensions;

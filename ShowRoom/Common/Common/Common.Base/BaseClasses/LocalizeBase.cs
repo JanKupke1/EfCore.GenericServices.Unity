@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Common.Base
+﻿namespace Common.Base
 {
     public class LocalizeBase
     {

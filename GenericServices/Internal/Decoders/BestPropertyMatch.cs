@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("Tests")]
 
-namespace GenericServices.Internal.Decoders
+namespace GenericServices.Unity.Internal.Decoders
 {
     internal class BestPropertyMatch
     {

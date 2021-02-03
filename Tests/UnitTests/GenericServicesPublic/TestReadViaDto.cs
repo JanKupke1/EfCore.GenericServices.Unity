@@ -3,10 +3,9 @@
 
 using System;
 using System.Linq;
-using DataLayer.EfClasses;
 using DataLayer.EfCode;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup;
+using GenericServices.Unity.PublicButHidden;
+using GenericServices.Unity.Setup;
 using Tests.Dtos;
 using Tests.Helpers;
 using TestSupport.EfHelpers;

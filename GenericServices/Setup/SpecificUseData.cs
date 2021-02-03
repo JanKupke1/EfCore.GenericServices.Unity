@@ -1,11 +1,11 @@
 ﻿// Copyright (c) 2018 Jon P Smith, GitHub: JonPSmith, web: http://www.thereformedprogrammer.net/
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
-using GenericServices.Configuration;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup.Internal;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.PublicButHidden;
+using GenericServices.Unity.Setup.Internal;
 
-namespace GenericServices.Setup
+namespace GenericServices.Unity.Setup
 {
     /// <summary>
     /// This holds specific config and mapping data - useful in unit testing and serverless applications

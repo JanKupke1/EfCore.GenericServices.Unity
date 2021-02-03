@@ -5,9 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using DataLayer.EfCode;
-using GenericServices.Configuration;
-using GenericServices.Configuration.Internal;
-using GenericServices.Internal.Decoders;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Internal.Decoders;
 using Xunit;
 using Xunit.Extensions.AssertExtensions;
 

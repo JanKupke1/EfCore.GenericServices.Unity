@@ -3,7 +3,7 @@
 
 using System.Linq;
 using System.Threading.Tasks;
-using GenericServices;
+using GenericServices.Unity;
 using Tests.EfClasses;
 using Tests.EfCode;
 using TestSupport.EfHelpers;

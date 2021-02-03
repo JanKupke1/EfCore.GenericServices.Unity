@@ -2,10 +2,8 @@
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
 using System.Linq;
-using System.Threading.Tasks;
-using GenericServices;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup;
+using GenericServices.Unity.PublicButHidden;
+using GenericServices.Unity.Setup;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 using Tests.EfClasses;

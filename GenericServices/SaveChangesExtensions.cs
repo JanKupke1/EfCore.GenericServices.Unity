@@ -6,12 +6,12 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using GenericServices.Configuration;
-using GenericServices.Internal;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Internal;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 
-namespace GenericServices
+namespace GenericServices.Unity
 {
     /// <summary>
     /// This static class contains the extension methods for saving data with validation

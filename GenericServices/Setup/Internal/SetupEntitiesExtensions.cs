@@ -2,10 +2,10 @@
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
 using System.Linq;
-using GenericServices.Internal.Decoders;
+using GenericServices.Unity.Internal.Decoders;
 using Microsoft.EntityFrameworkCore;
 
-namespace GenericServices.Setup.Internal
+namespace GenericServices.Unity.Setup.Internal
 {
     internal static class SetupEntitiesExtensions
     {

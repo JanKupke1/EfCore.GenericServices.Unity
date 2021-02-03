@@ -4,13 +4,13 @@ using AutoMapper.Configuration;
 using DataLayer.EfClasses;
 using DataLayer.EfCode;
 using Xunit;
-using GenericServices.Internal.Decoders;
-using GenericServices.Setup.Internal;
 using Tests.Configs;
 using Tests.Dtos;
 using Tests.Helpers;
 using TestSupport.EfHelpers;
 using Xunit.Extensions.AssertExtensions;
+using GenericServices.Unity.Internal.Decoders;
+using GenericServices.Unity.Setup.Internal;
 
 namespace Tests.UnitTests.GenericServicesInternal
 {

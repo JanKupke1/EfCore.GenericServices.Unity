@@ -3,14 +3,14 @@
 
 using System;
 using System.Linq;
-using GenericServices.Configuration.Internal;
-using GenericServices.Internal.Decoders;
-using GenericServices.Internal.LinqBuilders;
-using GenericServices.PublicButHidden;
+using GenericServices.Unity.Configuration.Internal;
+using GenericServices.Unity.Internal.Decoders;
+using GenericServices.Unity.Internal.LinqBuilders;
+using GenericServices.Unity.PublicButHidden;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 
-namespace GenericServices.Internal.MappingCode
+namespace GenericServices.Unity.Internal.MappingCode
 {
     internal class EntityCreateHandler<TDto> : StatusGenericHandler
         where TDto : class

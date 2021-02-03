@@ -6,11 +6,11 @@ using System.Collections.Immutable;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using GenericServices.Configuration;
+using GenericServices.Unity.Configuration;
 
 [assembly: InternalsVisibleTo("Tests")]
 
-namespace GenericServices.Internal.Decoders
+namespace GenericServices.Unity.Internal.Decoders
 {
     /// <summary>
     /// This will match a set of method/ctor parameters against a set of possible properties.

@@ -2,9 +2,6 @@
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using DataLayer.EfClasses;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Tests.Dtos
 {

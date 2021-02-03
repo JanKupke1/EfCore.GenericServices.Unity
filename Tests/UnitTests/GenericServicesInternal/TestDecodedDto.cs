@@ -4,13 +4,13 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using DataLayer.EfClasses;
 using DataLayer.EfCode;
-using GenericServices;
-using GenericServices.Configuration;
+using GenericServices.Unity;
 using Xunit;
-using GenericServices.Internal.Decoders;
 using Microsoft.AspNetCore.Mvc;
 using TestSupport.EfHelpers;
 using Xunit.Extensions.AssertExtensions;
+using GenericServices.Unity.Internal.Decoders;
+using GenericServices.Unity.Configuration;
 
 namespace Tests.UnitTests.GenericServicesInternal
 {

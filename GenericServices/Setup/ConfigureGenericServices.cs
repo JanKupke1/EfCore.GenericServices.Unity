@@ -3,13 +3,13 @@
 
 using System;
 using System.Reflection;
-using GenericServices.Configuration;
-using GenericServices.Setup.Internal;
-using GenericServices.PublicButHidden;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Setup.Internal;
+using GenericServices.Unity.PublicButHidden;
 using Microsoft.EntityFrameworkCore;
 using Unity;
 
-namespace GenericServices.Setup
+namespace GenericServices.Unity.Setup
 {
     /// <summary>
     /// This contains extension methods for setting up GenericServices at startup.

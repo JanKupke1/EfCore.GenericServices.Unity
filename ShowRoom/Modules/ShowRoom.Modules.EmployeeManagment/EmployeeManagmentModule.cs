@@ -6,11 +6,11 @@ using ShowRoom.Modules.EmployeeManagment.Views;
 
 namespace ShowRoom.Modules.EmployeeManagment
 {
-    public class ModuleNameModule : IModule
+    public class EmployeeManagmentModule : IModule
     {
         private readonly IRegionManager _regionManager;
 
-        public ModuleNameModule(IRegionManager regionManager)
+        public EmployeeManagmentModule(IRegionManager regionManager)
         {
             _regionManager = regionManager;
         }

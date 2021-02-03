@@ -4,7 +4,7 @@
 using System;
 using AutoMapper;
 using DataLayer.EfClasses;
-using GenericServices.Configuration;
+using GenericServices.Unity.Configuration;
 using Tests.Dtos;
 
 namespace Tests.Configs

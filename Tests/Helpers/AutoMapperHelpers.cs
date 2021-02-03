@@ -3,9 +3,9 @@
 
 using System;
 using AutoMapper;
-using GenericServices.Configuration;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup.Internal;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.PublicButHidden;
+using GenericServices.Unity.Setup.Internal;
 
 namespace Tests.Helpers
 {

@@ -4,7 +4,15 @@
     <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
   </PropertyGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.0" />
+    <PackageReference Include="GenericServices.StatusGeneric" Version="1.1.0" />
+    <PackageReference Include="Unity" Version="5.11.7" />
+  </ItemGroup>
+
+  <!--<ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
     <PackageReference Include="GenericServices.StatusGeneric" Version="1.1.0" />
@@ -16,7 +24,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
     <PackageReference Include="GenericServices.StatusGeneric" Version="1.1.0" />
     <PackageReference Include="Unity" Version="5.11.7" />
-  </ItemGroup>
+  </ItemGroup>-->
 
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -28,25 +36,26 @@
 
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageVersion>3.2.2</PackageVersion>
-    <Version>3.2.2</Version>
-    <AssemblyVersion>3.2.2.0</AssemblyVersion>
-    <FileVersion>3.2.2.0</FileVersion>
-    <Company>Selective Analytics</Company>
-    <Authors>Jon P Smith</Authors>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Company></Company>
+    <Authors>Jon P Smith, Jan Kupke</Authors>
     <PackageId>EfCore.GenericServices.Unity</PackageId>
     <Product>EfCore.GenericServices.Unity</Product>
-    <Description>Library to help you quickly code Create, Read, Update and Delete (CRUD) accesses in web/mobile/desktop applications using Entity Framework Core and the Unity Container.</Description>
+    <Description>Library to help you quickly code Create, Read, Update and Delete (CRUD) accesses in desktop applications using Entity Framework Core and the Unity Container.</Description>
     <Copyright>Copyright (c) 2021 Jan Kupke</Copyright>
     <PackageProjectUrl>https://github.com/JanKupke1/EfCore.GenericServices.Unity</PackageProjectUrl>
     <RepositoryUrl>https://github.com/JanKupke1/EfCore.GenericServices.Unity</RepositoryUrl>
     <RepositoryType>GuHub</RepositoryType>
-    <PackageTags>Entity Framework Core, WPF.NET Core</PackageTags>
+    <PackageTags>Entity Framework Core, WPF, .NET Core</PackageTags>
     <PackageReleaseNotes>
-      - Stops exception if matched parameter is null. This is an attempt to fix issue #47
+      First release to work with Unity.
     </PackageReleaseNotes>
-    <PackageLicenseUrl>https://github.com/JanKupke1/EfCore.GenericServices.Unity/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/JonPSmith/EfCore.GenericServices/master/Images/GenericServicesNuGetIcon128.png</PackageIconUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">

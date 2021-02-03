@@ -7,10 +7,6 @@ using System.Linq;
 using DataLayer.Dtos;
 using DataLayer.EfClasses;
 using DataLayer.EfCode;
-using GenericServices;
-using GenericServices.Configuration;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
@@ -21,6 +17,9 @@ using TestSupport.EfHelpers;
 using Xunit;
 using Xunit.Extensions.AssertExtensions;
 using Tests.Helpers;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Setup;
+using GenericServices.Unity.PublicButHidden;
 
 namespace Tests.UnitTests.GenericServicesSetup
 {

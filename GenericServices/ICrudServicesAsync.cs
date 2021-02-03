@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 
-namespace GenericServices
+namespace GenericServices.Unity
 {
     /// <summary>
     /// This is the sync interface to CrudServicesAsync, which assumes you have one DbContext which the CrudServices setup code will register to the DbContext type

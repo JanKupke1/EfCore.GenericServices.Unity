@@ -5,7 +5,7 @@ using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using DataLayer.EfClasses;
-using GenericServices;
+using GenericServices.Unity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Tests.Dtos

@@ -4,10 +4,10 @@
 using System;
 using DataLayer.EfClasses;
 using DataLayer.EfCode;
-using GenericServices;
-using GenericServices.Configuration;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup;
+using GenericServices.Unity;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.PublicButHidden;
+using GenericServices.Unity.Setup;
 using TestSupport.EfHelpers;
 using Xunit;
 using Xunit.Extensions.AssertExtensions;

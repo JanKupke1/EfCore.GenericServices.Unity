@@ -4,13 +4,13 @@
 using System;
 using System.Collections.Concurrent;
 using System.Runtime.CompilerServices;
-using GenericServices.Configuration;
+using GenericServices.Unity.Configuration;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 
 [assembly: InternalsVisibleTo("Test")]
 
-namespace GenericServices.Internal.Decoders
+namespace GenericServices.Unity.Internal.Decoders
 {
     internal static class DecodedDataCache
     {

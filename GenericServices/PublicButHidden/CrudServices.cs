@@ -5,15 +5,15 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 using AutoMapper.QueryableExtensions;
-using GenericServices.Configuration.Internal;
-using GenericServices.Internal;
-using GenericServices.Internal.Decoders;
-using GenericServices.Internal.LinqBuilders;
-using GenericServices.Internal.MappingCode;
+using GenericServices.Unity.Configuration.Internal;
+using GenericServices.Unity.Internal;
+using GenericServices.Unity.Internal.Decoders;
+using GenericServices.Unity.Internal.LinqBuilders;
+using GenericServices.Unity.Internal.MappingCode;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 
-namespace GenericServices.PublicButHidden
+namespace GenericServices.Unity.PublicButHidden
 {
     /// <summary>
     /// This is the sync version of GenericServices' CRUD, which assumes you have one DbContext which the CrudServices setup code will register to the DbContext type

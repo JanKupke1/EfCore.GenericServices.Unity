@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using DataLayer.EfClasses;
-using GenericServices;
+using GenericServices.Unity;
 using Microsoft.EntityFrameworkCore;
 
 namespace ServiceLayer.HomeController.Dtos

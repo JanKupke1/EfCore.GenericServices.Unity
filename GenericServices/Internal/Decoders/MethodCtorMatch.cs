@@ -5,11 +5,11 @@ using System;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using GenericServices.Configuration;
+using GenericServices.Unity.Configuration;
 
 [assembly: InternalsVisibleTo("Tests")]
 
-namespace GenericServices.Internal.Decoders
+namespace GenericServices.Unity.Internal.Decoders
 {
     internal enum HowTheyWereAskedFor { Unset, DefaultMatchToProperties, NamedMethodFromDtoClass, SpecifiedInPerDtoConfig}
 

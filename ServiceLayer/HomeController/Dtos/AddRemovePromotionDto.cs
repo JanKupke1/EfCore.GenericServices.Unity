@@ -3,7 +3,7 @@
 
 using System.ComponentModel;
 using DataLayer.EfClasses;
-using GenericServices;
+using GenericServices.Unity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ServiceLayer.HomeController.Dtos

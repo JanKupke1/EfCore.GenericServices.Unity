@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 using DataLayer.EfClasses;
 using DataLayer.EfCode;
-using GenericServices;
+using GenericServices.Unity;
 using Microsoft.EntityFrameworkCore;
 using Tests.Dtos;
 using Tests.Helpers;

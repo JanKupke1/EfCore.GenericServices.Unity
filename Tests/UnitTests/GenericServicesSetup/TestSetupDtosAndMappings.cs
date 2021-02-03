@@ -2,8 +2,8 @@
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
 using DataLayer.EfCode;
-using GenericServices.Configuration;
-using GenericServices.Setup.Internal;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Setup.Internal;
 using ServiceLayer.HomeController.Dtos;
 using Tests.EfCode;
 using TestSupport.Attributes;

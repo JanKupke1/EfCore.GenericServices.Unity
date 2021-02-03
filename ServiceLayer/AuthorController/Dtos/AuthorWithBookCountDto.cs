@@ -3,7 +3,7 @@
 
 using System.ComponentModel.DataAnnotations;
 using DataLayer.EfClasses;
-using GenericServices;
+using GenericServices.Unity;
 
 namespace ServiceLayer.AuthorController.Dtos
 {

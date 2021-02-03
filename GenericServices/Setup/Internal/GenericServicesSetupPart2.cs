@@ -2,11 +2,11 @@
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
 using System;
-using GenericServices.Configuration;
-using GenericServices.PublicButHidden;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.PublicButHidden;
 using Unity;
 
-namespace GenericServices.Setup.Internal
+namespace GenericServices.Unity.Setup.Internal
 {
     /// <summary>
     /// Used to chain ConfigureGenericServicesEntities to RegisterGenericServices

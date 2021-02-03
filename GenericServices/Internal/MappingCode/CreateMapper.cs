@@ -8,12 +8,12 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
-using GenericServices.Internal.Decoders;
-using GenericServices.Internal.LinqBuilders;
-using GenericServices.PublicButHidden;
+using GenericServices.Unity.Internal.Decoders;
+using GenericServices.Unity.Internal.LinqBuilders;
+using GenericServices.Unity.PublicButHidden;
 using Microsoft.EntityFrameworkCore;
 
-namespace GenericServices.Internal.MappingCode
+namespace GenericServices.Unity.Internal.MappingCode
 {
     internal class CreateMapper
     {

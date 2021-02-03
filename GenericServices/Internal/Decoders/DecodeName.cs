@@ -3,7 +3,7 @@
 
 using System;
 
-namespace GenericServices.Internal.Decoders
+namespace GenericServices.Unity.Internal.Decoders
 {
     internal enum DecodedNameTypes { NoNameGiven, Method, Ctor, AutoMapper}
 

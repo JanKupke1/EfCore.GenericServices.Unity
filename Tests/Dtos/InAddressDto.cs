@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using GenericServices;
+using GenericServices.Unity;
 using Tests.EfClasses;
 
 namespace Tests.Dtos

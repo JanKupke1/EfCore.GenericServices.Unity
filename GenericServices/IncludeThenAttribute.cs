@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("Tests")]
 
-namespace GenericServices
+namespace GenericServices.Unity
 {
     /// <summary>
     /// Add this attribute to your DTO/ViewModel that has the <see cref="ILinkToEntity{T}"/> applied to it.

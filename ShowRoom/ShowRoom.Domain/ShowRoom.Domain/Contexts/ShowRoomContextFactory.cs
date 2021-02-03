@@ -2,9 +2,6 @@
 using Common.EF.Library.Contexts;
 using Common.EF.Library.Exceptions;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ShowRoom.Domain.Contexts
 {

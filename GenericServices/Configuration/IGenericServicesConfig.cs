@@ -5,7 +5,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using StatusGeneric;
 
-namespace GenericServices.Configuration
+namespace GenericServices.Unity.Configuration
 {
     /// <summary>
     /// This is the signature for the method you can add which will be called before SaveChanges

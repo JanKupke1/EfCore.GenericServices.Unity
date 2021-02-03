@@ -4,7 +4,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace GenericServices.Setup
+namespace GenericServices.Unity.Setup
 {
     [Serializable]
     internal class InitializeServiceException : Exception

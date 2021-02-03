@@ -1,8 +1,6 @@
-using Common.EF.Library.Models;
-using GenericServices;
+using GenericServices.Unity;
 using ShowRoom.Core.Mvvm;
 using ShowRoom.Domain.Entities;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace ShowRoom.Modules.EmployeeManagment.DataLayer.Dtos

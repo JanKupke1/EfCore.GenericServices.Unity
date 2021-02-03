@@ -5,10 +5,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using GenericServices.Configuration;
+using GenericServices.Unity.Configuration;
 using Microsoft.EntityFrameworkCore;
 
-namespace GenericServices.Internal.Decoders
+namespace GenericServices.Unity.Internal.Decoders
 {
     internal class MethodCtorMatcher
     {

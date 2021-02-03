@@ -1,15 +1,7 @@
-﻿using System;
+﻿using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Internal.LinqBuilders;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using DataLayer.EfClasses;
-using GenericServices;
-using GenericServices.Configuration;
-using GenericServices.Internal.LinqBuilders;
-using Tests.EfClasses;
-using Tests.EfCode;
-using Tests.Helpers;
-using TestSupport.EfHelpers;
 using Xunit;
 using Xunit.Extensions.AssertExtensions;
 

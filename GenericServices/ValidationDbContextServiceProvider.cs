@@ -4,7 +4,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace GenericServices
+namespace GenericServices.Unity
 {
     /// <summary>
     /// This is the serviceProvider used in the validation of data in SaveChanges

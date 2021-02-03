@@ -1,8 +1,8 @@
-﻿using GenericServices.Configuration;
-using GenericServices.PublicButHidden;
+﻿using GenericServices.Unity.Configuration;
+using GenericServices.Unity.PublicButHidden;
 using Unity;
 
-namespace GenericServices.Setup
+namespace GenericServices.Unity.Setup
 {
     /// <summary>
     /// Used to chain ConfigureGenericServicesEntities to RegisterGenericServices

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace GenericServices.Internal.LinqBuilders
+namespace GenericServices.Unity.Internal.LinqBuilders
 {
     internal static class BuildFilter
     {

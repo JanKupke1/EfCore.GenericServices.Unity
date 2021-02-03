@@ -1,7 +1,6 @@
-﻿using System.ComponentModel;
+﻿using GenericServices.Unity.Internal;
 using System.ComponentModel.DataAnnotations;
 using Xunit;
-using GenericServices.Internal;
 using Xunit.Extensions.AssertExtensions;
 
 namespace Tests.UnitTests.GenericServicesInternal

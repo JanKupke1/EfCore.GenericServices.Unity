@@ -4,14 +4,14 @@
 using System.Threading.Tasks;
 using DataLayer.EfClasses;
 using DataLayer.EfCode;
-using GenericServices.Configuration;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup;
 using Tests.Dtos;
 using TestSupport.EfHelpers;
 using Xunit;
 using Xunit.Extensions.AssertExtensions;
 using Tests.Helpers;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Setup;
+using GenericServices.Unity.PublicButHidden;
 
 namespace Tests.UnitTests.GenericServicesSetup
 {

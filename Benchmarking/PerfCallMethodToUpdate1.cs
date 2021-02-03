@@ -1,17 +1,14 @@
-using System;
 using System.Linq;
-using AutoMapper;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 using DataLayer.EfClasses;
 using DataLayer.EfCode;
-using GenericServices.PublicButHidden;
-using GenericServices.Setup;
+using GenericServices.Unity.PublicButHidden;
+using GenericServices.Unity.Setup;
 using Microsoft.EntityFrameworkCore;
 using Tests.Dtos;
 using Tests.Helpers;
 using TestSupport.EfHelpers;
-using TestSupport.Helpers;
 using Xunit;
 using Xunit.Extensions.AssertExtensions;
 

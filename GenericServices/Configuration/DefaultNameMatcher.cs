@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 using System.Reflection;
 
-namespace GenericServices.Configuration
+namespace GenericServices.Unity.Configuration
 {
     /// <summary>
     /// This is the default name/type matching method. You can replace it with your own matcher by 

@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ShowRoom.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ShowRoom.Domain.Contexts.Configurations
 {

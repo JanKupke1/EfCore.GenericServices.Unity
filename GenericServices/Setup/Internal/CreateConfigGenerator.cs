@@ -5,12 +5,12 @@ using System;
 using System.Collections.Immutable;
 using System.Reflection;
 using AutoMapper;
-using GenericServices.Configuration;
-using GenericServices.Internal.Decoders;
-using GenericServices.Internal.MappingCode;
+using GenericServices.Unity.Configuration;
+using GenericServices.Unity.Internal.Decoders;
+using GenericServices.Unity.Internal.MappingCode;
 using Microsoft.EntityFrameworkCore;
 
-namespace GenericServices.Setup.Internal
+namespace GenericServices.Unity.Setup.Internal
 {
     internal class CreateConfigGenerator
     {

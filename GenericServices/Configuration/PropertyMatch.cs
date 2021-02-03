@@ -3,9 +3,9 @@
 
 using System;
 using System.Reflection;
-using GenericServices.Internal;
+using GenericServices.Unity.Internal;
 
-namespace GenericServices.Configuration
+namespace GenericServices.Unity.Configuration
 {
     /// <summary>
     /// This represents source of the data to go into a method/ctor. It to allow injection of DbContext into access methods

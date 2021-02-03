@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Modules\ShowRoom.Modules.ModuleName\ShowRoom.Modules.EmployeeManagment.csproj" />
+    <ProjectReference Include="..\..\Modules\ShowRoom.Modules.EmployeeManagment\ShowRoom.Modules.EmployeeManagment.csproj" />
   </ItemGroup>
 
 </Project>

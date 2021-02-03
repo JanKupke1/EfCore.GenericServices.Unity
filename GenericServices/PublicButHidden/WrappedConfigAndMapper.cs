@@ -3,9 +3,9 @@
 
 using System;
 using AutoMapper;
-using GenericServices.Configuration;
+using GenericServices.Unity.Configuration;
 
-namespace GenericServices.PublicButHidden
+namespace GenericServices.Unity.PublicButHidden
 {
     /// <summary>
     /// This is the interface used for dependency injection of the <see cref="WrappedAndMapper"/>
