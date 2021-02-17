@@ -106,14 +106,14 @@ namespace GenericServices.Unity.Setup
         public static IUnityContainer RegisterGenericServices(this IGenericServicesSetupPart2 setupPart2, 
             Type singleContextToRegister = null)
         {
-            setupPart2.Services.RegisterSingleton(typeof(ICrudServices<>), typeof(CrudServices<>));
-            setupPart2.Services.RegisterSingleton(typeof(ICrudServicesAsync<>), typeof(CrudServicesAsync<>));
+            setupPart2.Services.RegisterType(typeof(ICrudServices<>), typeof(CrudServices<>));
+            setupPart2.Services.RegisterType(typeof(ICrudServicesAsync<>), typeof(CrudServicesAsync<>));
 
             //If there is only one DbContext then the developer can use the non-generic CrudServices
             if (singleContextToRegister != null)
             {
-                setupPart2.Services.RegisterSingleton<ICrudServices, CrudServices>();
-                setupPart2.Services.RegisterSingleton<ICrudServicesAsync, CrudServicesAsync>();
+                setupPart2.Services.RegisterType<ICrudServices, CrudServices>();
+                setupPart2.Services.RegisterType<ICrudServicesAsync, CrudServicesAsync>();
                 setupPart2.Services.RegisterFactory(singleContextToRegister, s => (DbContext)s.Resolve(singleContextToRegister));
             }
 

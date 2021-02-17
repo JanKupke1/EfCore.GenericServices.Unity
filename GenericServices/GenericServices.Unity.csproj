@@ -36,10 +36,10 @@
 
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageVersion>1.0.1</PackageVersion>
-    <Version>1.0.1</Version>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
+    <PackageVersion>1.0.2</PackageVersion>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
     <Company></Company>
     <Authors>Jon P Smith, Jan Kupke</Authors>
     <PackageId>EfCore.GenericServices.Unity</PackageId>
