@@ -2,6 +2,7 @@
 // Licensed under MIT licence. See License.txt in the project root for license information.
 
 using Microsoft.EntityFrameworkCore;
+using Tests.Configs;
 using Tests.EfClasses;
 
 namespace Tests.EfCode
@@ -33,6 +34,9 @@ namespace Tests.EfCode
 #endif
         public DbSet<ParentOneToOne> ParentOneToOnes { get; set; }
 
+        public DbSet<SelfLinkedItemSelfeLinkedItem> SelfLinkedItemSelfeLinkedItems { get; set; }
+        public DbSet<SelfLinkedItem> SelfeLinkedItems { get; set; }
+
 
         public TestDbContext(DbContextOptions<TestDbContext> options): base(options) { }
 
@@ -48,6 +52,10 @@ namespace Tests.EfCode
 #elif NETCOREAPP3_0
             modelBuilder.Entity<ChildReadOnly>().ToView("ChildrenView").HasNoKey();
 #endif
+
+
+
+            modelBuilder.ApplyConfiguration(new SelfLinkedItemSelfeLinkedItemConfig());
         }
     }
 }

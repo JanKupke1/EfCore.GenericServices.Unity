@@ -7,6 +7,8 @@ using System.Linq;
 using DataLayer.Dtos;
 using DataLayer.EfClasses;
 using DataLayer.EfCode;
+using Tests.EfClasses;
+using Tests.EfCode;
 
 namespace Tests.Helpers
 {
@@ -151,5 +153,21 @@ namespace Tests.Helpers
             var bookOrders = new List<OrderBooksDto>() { new OrderBooksDto(1, bookOrdered, 1) };
             return Order.CreateOrder(userId, deliverDay, bookOrders)?.Result;
         }
+        public static void SeedDatabaseSelfeLinkedItems(this TestDbContext context, int numItems = 10)
+        {
+            context.SelfeLinkedItems.AddRange(CreateSelfeLinkedItems(numItems));
+            context.SaveChanges();
+        }
+
+        private static List<SelfLinkedItem> CreateSelfeLinkedItems(int numItems)
+        {
+            List<SelfLinkedItem> result = new List<SelfLinkedItem>();
+            for (int i = 0; i < numItems; i++)
+            {
+                result.Add(new SelfLinkedItem { Name = $"Item {i + 1}" });
+            }
+            return result;
+        }
+
     }
 }

@@ -16,6 +16,7 @@ namespace DataLayer.EfCode
         public DbSet<Book> Books { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Order> Orders { get; set; }
+     
 
         protected override void
             OnModelCreating(ModelBuilder modelBuilder)
@@ -23,7 +24,7 @@ namespace DataLayer.EfCode
             modelBuilder.ApplyConfiguration(new BookConfig());       
             modelBuilder.ApplyConfiguration(new BookAuthorConfig());
             modelBuilder.ApplyConfiguration(new OrderConfig());
-            modelBuilder.ApplyConfiguration(new LineItemConfig());   
+            modelBuilder.ApplyConfiguration(new LineItemConfig());       
         }
     }
 }
